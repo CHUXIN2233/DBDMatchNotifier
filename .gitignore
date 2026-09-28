@@ -1,0 +1,43 @@
+# This workspace contains unrelated local projects. Only explicitly allowed
+# DBD Match Notifier files should be visible to Git.
+*
+!.gitignore
+!README.md
+!LICENSE
+!SECURITY.md
+!requirements-build.txt
+!version_info.txt
+!DBDMatchNotifier.spec
+!dbd_match_network_notifier.py
+!dbd_notification.py
+!dbd_runtime.py
+!dbd_wechat_notifier.py
+!.github/
+!.github/workflows/
+!.github/workflows/build-release.yml
+
+# Never publish runtime state, credentials, logs, or captured observations.
+wechat_state.json
+**/wechat_state.json
+*.log
+*.jsonl
+*.tmp
+*.py[cod]
+__pycache__/
+.venv/
+venv/
+env/
+dist/
+build/
+build_*/
+*.spec.bak
+*.exe
+
+# Local/unrelated workspace material.
+AgentDock/
+PowerDisplay/
+lolhex_backup/
+lolhexguide-compat-backup/
+lolhexguide-full-backup/
+lolhex_main_index.cjs
+null
